@@ -45,7 +45,7 @@ public void user_selects_filter_option1() throws IOException, InterruptedExcepti
 public void user_selects_filter_option2() throws IOException, InterruptedException {
 	click(xpath("FilterOption2"));
 	sleep(1000);
-
+//test
 
 }
 
