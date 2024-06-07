@@ -37,9 +37,10 @@ public class Login extends BaseMethods {
 	}
 
 	@Then("User is navigated to the home page")
-	public void user_is_navigated_to_the_home_page() throws IOException {
+	public void user_is_navigated_to_the_home_page() throws IOException, InterruptedException {
 
 		verifyPageUrl(data("Dashboard"));
+		sleep(2000);
 		
 	}
 

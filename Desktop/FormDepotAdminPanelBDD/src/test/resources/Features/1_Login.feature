@@ -1,4 +1,4 @@
-Feature: Test login functionality
+Feature:  Test login functionality
 
   @smoketest
   Scenario Outline: Test login with valid credentials

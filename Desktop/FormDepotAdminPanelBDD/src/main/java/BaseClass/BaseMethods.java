@@ -27,7 +27,7 @@ public static WebDriver driver ;
 	public static void setup() {
 
 		//System.setProperty("webdriver.gecko.driver", "/Users/mohammadakram.saiyed/Desktop/geckodriver22");
-			System.setProperty("webdriver.chrome.driver", "/Users/mohammadakram.saiyed/eclipse-workspace/FormDepotAdminPanel/src/main/resources/drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "/Users/mohammadakram.saiyed/git/Formdepotjava/Desktop/FormDepotAdminPanelBDD/src/main/resources/drivers/chromedriver");
 		//driver = new FirefoxDriver();
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
@@ -59,6 +59,9 @@ public static WebDriver driver ;
 		driver.quit();
 	}
 
+	public void refresh() {
+		driver.navigate().refresh();
+	}
 	//navigate
 	public  void go(String url) {
 		driver.get(url);
@@ -92,7 +95,7 @@ public static WebDriver driver ;
 	
 	
 	public String xpath(String string) throws IOException {
-		FileReader xpathreader=new FileReader("/Users/mohammadakram.saiyed/eclipse-workspace/FormDepotAdminPanel/src/test/resources/Properties/xpath.properties");
+		FileReader xpathreader=new FileReader("/Users/mohammadakram.saiyed/git/Formdepotjava/Desktop/FormDepotAdminPanelBDD/src/test/resources/Properties/xpath.properties");
 		Properties props=new Properties();
 		props.load(xpathreader);
 		return props.getProperty(string);
@@ -118,7 +121,7 @@ public static WebDriver driver ;
     }
 	//get property for data input
 	public String data(String string) throws IOException {
-		FileReader datareader=new FileReader("/Users/mohammadakram.saiyed/eclipse-workspace/FormDepotAdminPanel/src/test/resources/Properties/data.properties");
+		FileReader datareader=new FileReader("/Users/mohammadakram.saiyed/git/Formdepotjava/Desktop/FormDepotAdminPanelBDD/src/test/resources/Properties/data.properties");
 		Properties props=new Properties();
 		props.load(datareader);
 		return props.getProperty(string);
