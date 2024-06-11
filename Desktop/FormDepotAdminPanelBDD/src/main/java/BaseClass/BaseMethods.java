@@ -23,7 +23,7 @@ public class BaseMethods {
 public static WebDriver driver ;
 	
 	
-	@BeforeAll
+	//@BeforeAll
 	public static void setup() {
 
 		//System.setProperty("webdriver.gecko.driver", "/Users/mohammadakram.saiyed/Desktop/geckodriver22");
