@@ -51,7 +51,6 @@ public static WebDriver driver ;
 //		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //	}
 
-	@org.junit.jupiter.api.AfterAll
 	public void teardown() throws IOException {
 		driver.quit();
 	}
