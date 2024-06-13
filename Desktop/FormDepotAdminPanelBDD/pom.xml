@@ -75,10 +75,7 @@
                 <version>2.22.2</version>
                 <configuration>
                     <includes>
-                       <!--<include>**/MyRunner.java</include>-->
-
-                        <include>**/1_Login.feature</include>
-
+                    <include>**/MyRunner.java</include>
                     </includes>
                 </configuration>
             </plugin>
