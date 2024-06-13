@@ -8,7 +8,6 @@ import io.cucumber.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/resources/Features", 
 		glue= {"StepDef"},
-		monochrome = true,
 		plugin = {"pretty","html:target/HtmlReports.html"},
 		tags="@smoketest"
 
