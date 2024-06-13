@@ -13,23 +13,40 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.BeforeAll;
+
 
 
 public class BaseMethods {
 
 public static WebDriver driver ;
 	
-	
-	//@BeforeAll
-	public static void setup() {
 
-		//System.setProperty("webdriver.gecko.driver", "/Users/mohammadakram.saiyed/Desktop/geckodriver22");
+
+
+	public static WebDriver setup2() {
+		
 			System.setProperty("webdriver.chrome.driver", "/Users/mohammadakram.saiyed/git/Formdepotjava/Desktop/FormDepotAdminPanelBDD/src/main/resources/drivers/chromedriver");
-		//driver = new FirefoxDriver();
-			driver = new ChromeDriver();
-			driver.manage().window().maximize();
-			
-	}
+				driver = new ChromeDriver();
+				driver.manage().window().maximize();
+				return driver;
+				
+					}
+		
+				
+	
+//	@Before
+//	public static void setup() {
+//
+//		//System.setProperty("webdriver.gecko.driver", "/Users/mohammadakram.saiyed/Desktop/geckodriver22");
+//			System.setProperty("webdriver.chrome.driver", "/Users/mohammadakram.saiyed/git/Formdepotjava/Desktop/FormDepotAdminPanelBDD/src/main/resources/drivers/chromedriver");
+//		//driver = new FirefoxDriver();
+//			driver = new ChromeDriver();
+//			driver.manage().window().maximize();
+//			
+//	}
 	
 	
 //	public static void setup(String browser) {
@@ -51,46 +68,48 @@ public static WebDriver driver ;
 //		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 //	}
 
+	
+	//@After
 	public void teardown() throws IOException {
 		driver.quit();
 	}
 
-	public void refresh() {
+	public static void refresh() {
 		driver.navigate().refresh();
 	}
 	//navigate
-	public  void go(String url) {
+	public static void go(String url) {
 		driver.get(url);
 	}
 
 	//println method
-	public void print(String string) {
+	public static void print(String string) {
 		System.out.println(string);
 	}
 
 	//find method
-	public WebElement find(String locator) {
+	public static WebElement find(String locator) {
 		return driver.findElement(By.xpath(locator));
 	}
 
 	//click method
-	public void click(String locator) {
+	public static void click(String locator) {
 		find(locator).click();
 	}
 
 	//typing method
-	public void type(String locator,String string) {
+	public static void type(String locator,String string) {
 		find(locator).sendKeys(string);
 	}
 	
-	public void clear(WebElement string) {
+	public static void clear(WebElement string) {
 		string.clear();
 	}
 	
 
 	
 	
-	public String xpath(String string) throws IOException {
+	public static String xpath(String string) throws IOException {
 		FileReader xpathreader=new FileReader("/Users/mohammadakram.saiyed/git/Formdepotjava/Desktop/FormDepotAdminPanelBDD/src/test/resources/Properties/xpath.properties");
 		Properties props=new Properties();
 		props.load(xpathreader);
@@ -116,7 +135,7 @@ public static WebDriver driver ;
         }
     }
 	//get property for data input
-	public String data(String string) throws IOException {
+	public static String data(String string) throws IOException {
 		FileReader datareader=new FileReader("/Users/mohammadakram.saiyed/git/Formdepotjava/Desktop/FormDepotAdminPanelBDD/src/test/resources/Properties/data.properties");
 		Properties props=new Properties();
 		props.load(datareader);
@@ -132,13 +151,13 @@ public static WebDriver driver ;
 //	}
 
 	//hover
-	public void hover(String string) {
+	public static void hover(String string) {
 		Actions action = new Actions(driver);
 		action.moveToElement(find(string)).perform();
 	}
 
 	//Thread Sleep
-	public void sleep(int duration_in_ms) throws InterruptedException {
+	public static void sleep(int duration_in_ms) throws InterruptedException {
 		Thread.sleep(duration_in_ms);
 	}
 

@@ -1,15 +1,7 @@
 Feature:  Test login functionality
 
   //@smoketest
-  Scenario Outline: Test login with valid credentials
-    Given User is on the login page
-    When User enters <username> and <password>
-    And User clicks on the login button
-    Then User is navigated to the home page
-	
-	Examples:
-	|username|password|
-	|radixdt|Radixweb@8|
+ 
 	
 Scenario Outline: Test login with invalid credentials -1
     Given User is on the login page
@@ -40,3 +32,14 @@ Scenario Outline: Test login with invalid credentials -1
 	Examples:
 	|username|password|
 	|Invalid|Invalid@8|
+	
+	@smoketest
+	 Scenario Outline: Test login with valid credentials
+    Given User is on the login page
+    When User enters <username> and <password>
+    And User clicks on the login button
+    Then User is navigated to the home page
+	
+	Examples:
+	|username|password|
+	|radixdt|Radixweb@8|
