@@ -8,8 +8,8 @@ import io.cucumber.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/resources/Features", 
 		glue= {"StepDef"},
-		plugin = {"pretty","html:target/HtmlReports.html"},
-		tags="@smoketest"
+		plugin = {"pretty","html:target/HtmlReports.html"}
+		//tags="@smoketest"
 
 )
 

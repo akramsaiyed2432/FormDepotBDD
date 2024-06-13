@@ -1,6 +1,6 @@
 Feature:  Test login functionality
 
-  @smoketest
+  //@smoketest
   Scenario Outline: Test login with valid credentials
     Given User is on the login page
     When User enters <username> and <password>
@@ -11,7 +11,6 @@ Feature:  Test login functionality
 	|username|password|
 	|radixdt|Radixweb@8|
 	
-	@negativetest
 Scenario Outline: Test login with invalid credentials -1
     Given User is on the login page
     When User enters <username> and <password>
@@ -22,7 +21,6 @@ Scenario Outline: Test login with invalid credentials -1
 	|username|password|
 	|Invalid|Radixweb@8|
 	
-		@negativetest
 	Scenario Outline: Test login with invalid credentials -2
     Given User is on the login page
     When User enters <username> and <password>
@@ -33,7 +31,6 @@ Scenario Outline: Test login with invalid credentials -1
 	|username|password|
 	|radixdt|Invalid@8|
 	
-		@negativetest
 	Scenario Outline: Test login with invalid credentials -3
     Given User is on the login page
     When User enters <username> and <password>
