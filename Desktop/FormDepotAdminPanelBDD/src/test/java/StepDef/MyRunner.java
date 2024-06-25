@@ -8,7 +8,11 @@ import io.cucumber.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/resources/Features", 
 		glue= {"StepDef"},
-		plugin = {"pretty","html:target/HtmlReports.html"},
+				plugin = {
+				        "pretty", 
+				        "html:target/HtmlReports.html",
+				        "io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm"
+				    },
 		tags="@smoketest"
 
 )
