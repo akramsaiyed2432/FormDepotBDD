@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Cucumber Test Suite" parallel="methods" thread-count="2">
+<suite name="Cucumber Test Suite" parallel="methods" thread-count="1">
     <test name="Cucumber Tests">
         <classes>
-            <class name="StepDef.Login" />
+            <class name="StepDef.TestNGCucumberRunner" />
         </classes>
     </test>
 </suite>
