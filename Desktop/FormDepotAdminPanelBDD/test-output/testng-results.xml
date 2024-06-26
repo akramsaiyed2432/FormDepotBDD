@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
+<testng-results ignored="0" total="6" passed="1" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-26T16:06:00 IST" name="Cucumber Test Suite" finished-at="2024-06-26T16:06:05 IST" duration-ms="4786">
+  <suite started-at="2024-06-26T16:23:18 IST" name="Cucumber Test Suite" finished-at="2024-06-26T16:23:24 IST" duration-ms="6307">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-06-26T16:06:00 IST" name="Cucumber Tests" finished-at="2024-06-26T16:06:05 IST" duration-ms="4786">
+    <test started-at="2024-06-26T16:23:18 IST" name="Cucumber Tests" finished-at="2024-06-26T16:23:24 IST" duration-ms="6307">
       <class name="StepDef.TestNGCucumberRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:06:00 IST" name="setUpClass" finished-at="2024-06-26T16:06:00 IST" duration-ms="489" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:23:18 IST" name="setUpClass" finished-at="2024-06-26T16:23:18 IST" duration-ms="491" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,7 +21,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:06:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-26T16:06:05 IST" duration-ms="4207" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:23:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-26T16:23:24 IST" duration-ms="5759" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,55 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=126.0.6478.126)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0c8447aea77e835195cf34beb3da3bcb, findElement {value=//button[@type='submit'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.126, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /var/folders/fv/tx2ql07n7pz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57267}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57267/devtoo..., se:cdpVersion: 126.0.6478.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c8447aea77e835195cf34beb3da3bcb]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=126.0.6478.126)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0c8447aea77e835195cf34beb3da3bcb, findElement {value=//button[@type='submit'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.126, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /var/folders/fv/tx2ql07n7pz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57267}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57267/devtoo..., se:cdpVersion: 126.0.6478.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c8447aea77e835195cf34beb3da3bcb
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at BaseClass.BaseMethods.find(BaseMethods.java:92)
-at BaseClass.BaseMethods.click(BaseMethods.java:97)
-at StepDef.Login.user_clicks_on_the_login_button(Login.java:42)
-at ✽.User clicks on the login button(file:///Users/mohammadakram.saiyed/git/Formdepotjava/Desktop/FormDepotAdminPanelBDD/src/test/resources/Features/1_Login.feature:40)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:06:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-26T16:06:01 IST" duration-ms="100" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:23:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-26T16:23:19 IST" duration-ms="100" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -110,7 +65,7 @@ at ✽.User is on Advisor Management screen.(file:///Users/mohammadakram.saiyed/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:06:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-26T16:06:01 IST" duration-ms="100" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:23:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-26T16:23:19 IST" duration-ms="100" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -138,7 +93,7 @@ at ✽.User is on Advisor Management screen.(file:///Users/mohammadakram.saiyed/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:06:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-26T16:06:01 IST" duration-ms="101" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:23:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-26T16:23:19 IST" duration-ms="100" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -166,7 +121,7 @@ at ✽.User is on Advisor Management screen.(file:///Users/mohammadakram.saiyed/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:06:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-26T16:06:01 IST" duration-ms="102" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:23:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-26T16:23:19 IST" duration-ms="100" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -194,7 +149,7 @@ at ✽.User is on Advisor Management screen.(file:///Users/mohammadakram.saiyed/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:06:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-26T16:06:01 IST" duration-ms="105" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:23:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-26T16:23:19 IST" duration-ms="99" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -222,7 +177,7 @@ at ✽.User is on Advisor Management screen.(file:///Users/mohammadakram.saiyed/
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:06:05 IST" name="tearDownClass" finished-at="2024-06-26T16:06:05 IST" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:StepDef.TestNGCucumberRunner@399c4be1]" started-at="2024-06-26T16:23:24 IST" name="tearDownClass" finished-at="2024-06-26T16:23:24 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

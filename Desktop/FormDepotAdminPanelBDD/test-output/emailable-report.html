@@ -9,35 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Cucumber Test Suite</th></tr>
-<tr><td><a href="#t0">Cucumber Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">4,786</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Cucumber Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">6,307</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Cucumber Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Cucumber Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">StepDef.TestNGCucumberRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="6">1719398160917</td><td rowspan="6">4207</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m5">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Cucumber Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Cucumber Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">StepDef.TestNGCucumberRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="5">1719399198955</td><td rowspan="5">99</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m4">runScenario</a></td></tr><tr><th colspan="4">Cucumber Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">StepDef.TestNGCucumberRunner</td><td><a href="#m5">runScenario</a></td><td rowspan="1">1719399198954</td><td rowspan="1">5759</td></tr></tbody>
 </table>
-<h2>Cucumber Tests</h2><h3 id="m0">StepDef.TestNGCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test login with valid credentials&quot;</td><td>&quot;Test login functionality&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=126.0.6478.126)
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;17.0.11&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0c8447aea77e835195cf34beb3da3bcb, findElement {value=//button[@type=&apos;submit&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.126, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: /var/folders/fv/tx2ql07n7pz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57267}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57267/devtoo..., se:cdpVersion: 126.0.6478.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0c8447aea77e835195cf34beb3da3bcb
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at BaseClass.BaseMethods.find(BaseMethods.java:92)
-	at BaseClass.BaseMethods.click(BaseMethods.java:97)
-	at StepDef.Login.user_clicks_on_the_login_button(Login.java:42)
-	at ✽.User clicks on the login button(file:///Users/mohammadakram.saiyed/git/Formdepotjava/Desktop/FormDepotAdminPanelBDD/src/test/resources/Features/1_Login.feature:40)
-... Removed 5 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Cucumber Tests</h2><h3 id="m0">StepDef.TestNGCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test Filter functionality.&quot;</td><td>&quot;Test Advisor management flow.&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getCurrentUrl()&quot; because &quot;BaseClass.BaseMethods.driver&quot; is null
+	at BaseClass.BaseMethods.verifyPageUrl(BaseMethods.java:128)
+	at StepDef.advisorMangement.user_is_on_advisor_management_screen(advisorMangement.java:18)
+	at ✽.User is on Advisor Management screen.(file:///Users/mohammadakram.saiyed/git/Formdepotjava/Desktop/FormDepotAdminPanelBDD/src/test/resources/Features/2_AdvisorManagement.feature:18)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">StepDef.TestNGCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test search functionality with firstname.&quot;</td><td>&quot;Test Advisor management flow.&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getCurrentUrl()&quot; because &quot;BaseClass.BaseMethods.driver&quot; is null
 	at BaseClass.BaseMethods.verifyPageUrl(BaseMethods.java:128)
 	at StepDef.advisorMangement.user_is_on_advisor_management_screen(advisorMangement.java:18)
@@ -58,10 +38,6 @@ Session ID: 0c8447aea77e835195cf34beb3da3bcb
 	at StepDef.advisorMangement.user_is_on_advisor_management_screen(advisorMangement.java:18)
 	at ✽.User is on Advisor Management screen.(file:///Users/mohammadakram.saiyed/git/Formdepotjava/Desktop/FormDepotAdminPanelBDD/src/test/resources/Features/2_AdvisorManagement.feature:5)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">StepDef.TestNGCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test Filter functionality.&quot;</td><td>&quot;Test Advisor management flow.&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getCurrentUrl()&quot; because &quot;BaseClass.BaseMethods.driver&quot; is null
-	at BaseClass.BaseMethods.verifyPageUrl(BaseMethods.java:128)
-	at StepDef.advisorMangement.user_is_on_advisor_management_screen(advisorMangement.java:18)
-	at ✽.User is on Advisor Management screen.(file:///Users/mohammadakram.saiyed/git/Formdepotjava/Desktop/FormDepotAdminPanelBDD/src/test/resources/Features/2_AdvisorManagement.feature:18)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">StepDef.TestNGCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test login with valid credentials&quot;</td><td>&quot;Test login functionality&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

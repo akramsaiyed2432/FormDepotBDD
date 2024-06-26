@@ -24,11 +24,16 @@ import io.cucumber.testng.CucumberOptions;
 
 
 
-public class TestNGCucumberRunner extends AbstractTestNGCucumberTests {
-	  @Override
-	  @DataProvider(parallel = true)
-	  public Object[][] scenarios() {
-	    return super.scenarios();
-	  }
+//public class TestNGCucumberRunner extends AbstractTestNGCucumberTests {
+//	  @Override
+//	  @DataProvider(parallel = true)
+//	  public Object[][] scenarios() {
+//	    return super.scenarios();
+//	  }
+//	
+//}
+
+public class TestNGCucumberRunner {
 	
 }
+
