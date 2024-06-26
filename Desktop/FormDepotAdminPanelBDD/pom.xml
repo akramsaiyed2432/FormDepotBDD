@@ -5,6 +5,7 @@
   <artifactId>FormDepotAdminPanel</artifactId>
   <version>0.0.1-SNAPSHOT</version>
     <properties>
+		<suiteXml>testSuite.xml</suiteXml>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
@@ -81,10 +82,10 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
-                    <includes>
-                        <include>**/TestNGCucumberRunner.java</include>
-                    </includes>
-                </configuration>
+<suiteXmlFiles>
+<suiteXmlFile>testng.xml</suiteXmlFile>
+</suiteXmlFiles>
+</configuration>
             </plugin>
         </plugins>
     </build>
