@@ -1,6 +1,5 @@
 Feature:  Test login functionality
 
-  //@smoketest
  
 	
 Scenario Outline: Test login with invalid credentials -1
