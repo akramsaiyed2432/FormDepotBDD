@@ -2,7 +2,7 @@
 <suite name="Cucumber Test Suite" parallel="methods" thread-count="2">
     <test name="Cucumber Tests">
         <classes>
-            <class name="runners.TestNGCucumberRunner" />
+            <class name="StepDef.TestNGCucumberRunner" />
         </classes>
     </test>
 </suite>
